@@ -1,9 +1,9 @@
-import Post from './components/post_component';
 import Story from './components/story_component';
 import get_random_profiles from './javascripts/get_random_profiles';
 import {useState, useEffect} from 'react';
 import './style.scss';
-
+import PostArr from './sugesstions/Suggesstions';
+import './App.css';
 function App() {
   return (
     <div className="App">
@@ -64,13 +64,6 @@ function StoryArr() {
       </div>
     </div>
   );
-}
-
-/**
- * 게시물 묶음
- */
-function PostArr() {
-
 }
 
 function Navbar() {
