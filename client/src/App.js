@@ -19,8 +19,10 @@ function Header(){
   return(
     <div className="header">
       <img src="assets/images/logo.jpg"/>
-      <img src="assets/images/like_off_icon.jpg"/>
-      <img src="assets/images/direct_msg_icon.jpg"/>
+      <div>
+        <img src="assets/images/like_off_icon.jpg"/>
+        <img src="assets/images/direct_msg_icon.jpg"/>
+      </div>
     </div> 
   )
 }
