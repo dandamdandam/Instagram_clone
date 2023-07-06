@@ -3,13 +3,14 @@ import './Post.css'
 
 import { Avatar } from '@mui/material'
 import { MoreHoriz, FavoriteBorder, ChatBubbleOutlineRounded, Telegram, BookmarkAddTwoTone } from '@mui/icons-material'
+// import { get_random_profiles } from '../../javascripts/get_random_profiles.js'
 
 function Post() {
   return ( 
     <div className='post'>
       <div className='post__header'>
         <div className='post__headerLeft'>
-          <Avatar className='post__avatar' alt='username' src='' />
+          <Avatar className='post__avatar' alt='username' src='assets/random_pfp/pfp3.jpg' />
           foo • <span>a year ago</span>
           {/*https://open.spotify.com/track/6fIoibjLOuU8I3NJbF1UOi?si=8c6d7b883a294932*/}
         </div>
