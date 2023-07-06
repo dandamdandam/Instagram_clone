@@ -5,7 +5,7 @@ import { Avatar } from '@mui/material'
 import { MoreHoriz, FavoriteBorder, ChatBubbleOutlineRounded, Telegram, BookmarkAddTwoTone } from '@mui/icons-material'
 
 function Post() {
-  return (
+  return ( 
     <div className='post'>
       <div className='post__header'>
         <div className='post__headerLeft'>
