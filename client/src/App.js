@@ -74,13 +74,19 @@ function PostArr() {
 }
 
 function Navbar() {
+  var tmp={
+    width: '50px',
+    height: '50px',
+    borderRadius: '70%'
+  };
+
   return(
     <div className="nav_bar">
-      <img src="assets/images/bottom_nav_home_on_icon.jpg"/>
+      <img src="assets/images/bottom_nav_home_off_icon.jpg"/>
       <img src="assets/images/bottom_nav_search_off_icon.jpg"/>
       <img src="assets/images/bottom_nav_upload_icon.jpg"/>
       <img src="assets/images/bottom_nav_reels_off_icon.jpg"/>
-      <img src="assets/images/default_image.jpg"/>
+      <img src="assets/images/default_image.jpg" style={tmp}/>
     </div>
   );
 }
