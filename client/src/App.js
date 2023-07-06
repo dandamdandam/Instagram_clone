@@ -1,32 +1,35 @@
-import Post from './components/post_component';
-import Story from './components/story_component';
+// import Post from './components/post_component';
+// import Story from './sugesstions/Suggesstions';
+import PostArr from './sugesstions/Suggesstions';
+import './App.css';
+
 
 function App() {
   return (
     <div className="App">
-      <StoryArr/>
+      {/* <StoryArr/> */}
       <PostArr />
-      <Navbar />
+      {/* <Navbar /> */}
     </div>
   );
 }
 
-/**
- * 스토리 묶음
- */
-function StoryArr() {
+// /**
+//  * 스토리 묶음
+//  */
+// function StoryArr() {
 
-}
+// }
 
-/**
- * 게시물 묶음
- */
-function PostArr() {
+// // /**
+// //  * 게시물 묶음
+// //  */
+// // function PostArr() {
+  
+// // }
 
-}
+// function Navbar() {
 
-function Navbar() {
-
-}
+// }
 
 export default App;
