@@ -1,0 +1,38 @@
+[
+    {
+        "author":{
+            "name":"Author Name",
+            "image":"assets/random_pfp/pfp1.jpg"
+        },
+        "postImage":"https://source.unsplash.com/category/insta",
+        "timestamp":"2021-01-01T00:00:00.000Z",
+        "likes":100
+    },
+    {
+        "author":{
+            "name":"Author Name",
+            "image":"assets/random_pfp/pfp2.jpg"
+        },
+        "postImage":"https://source.unsplash.com/category/insta",
+        "timestamp":"2021-01-01T00:00:00.000Z",
+        "likes":100
+    },
+    {
+        "author":{
+            "name":"Author Name",
+            "image":"assets/random_pfp/pfp3.jpg"
+        },
+        "postImage":"https://source.unsplash.com/category/insta",
+        "timestamp":"2021-01-01T00:00:00.000Z",
+        "likes":100
+    },
+    {
+        "author":{
+            "name":"Author Name",
+            "image":"assets/random_pfp/pfp4.jpg"
+        },
+        "postImage":"https://source.unsplash.com/category/insta",
+        "timestamp":"2021-01-01T00:00:00.000Z",
+        "likes":100
+    }
+]
