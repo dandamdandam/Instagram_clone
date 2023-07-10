@@ -1,6 +1,6 @@
 import Story from './components/story_component';
 import get_random_profiles from './javascripts/get_random_profiles';
-import {useState, useEffect} from 'react';
+import {useState, useRef} from 'react';
 import './style.scss';
 import PostArr from './sugesstions/Suggesstions';
 import './App.css';
@@ -35,22 +35,24 @@ function StoryArr() {
   var [new_story_num]=useState(Math.random() * profiles.length + 1);
 
   /* 스토리 컨테이너 이동 */
-  var [con_margin, con_move]=useState(0);
+  var [con_tran, con_move]=useState(0);
+  var story_con_ref=useRef();
   function move_left(){
-    if(con_margin!=0)
-      con_move(con_margin+document.body.clientWidth);
+    if(con_tran!=0)
+      con_move(con_tran+document.body.clientWidth);
   };
   function move_right(){
-    con_move(con_margin-document.body.clientWidth);
+    if(con_tran>(document.body.clientWidth-story_con_ref.current.offsetWidth))
+      con_move(con_tran-document.body.clientWidth);
   }
   var move = {
     transition: 'all ease-in-out 0.5s',
-    transform: 'translate('+con_margin+'px)'
+    transform: 'translate('+con_tran+'px)'
   }
 
   return(
-    <div style = {{height: '111.333px'}}>
-      <div className="story_container" style={move}>
+    <div style = {{height: '111.333px', margin: '5px 0px 10px 0px'}}>
+      <div className="story_container" ref={story_con_ref} style={move}>
         <Story img_path={"assets/images/default_image.jpg"} id={"내 스토리"} is_new={true}/>
         {
           profiles.map(function(i){
