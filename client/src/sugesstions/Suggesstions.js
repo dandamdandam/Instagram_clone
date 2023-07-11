@@ -13,16 +13,23 @@ function PostArr() {
     .then(data => setPost(data));
   }, []);
 
-  useEffect(() => {
-    console.log(post);
-  }, [post]);
+  // useEffect(() => {
+  //   console.log(post);
+  // }, [post]);
 
   return (
     <div>
-      <Post />
-      {post.photo}
-      <Post />
-      <Post />
+      {post.map((item) => (
+        <Post
+          key={item.id}
+          authorName={item.author.name}
+          authorImage={item.author.image}
+          postImage={item.postImage}
+          timestamp={item.timestamp}
+          likes={item.likes}
+          comment={item.comment}
+        />
+      ))}
     </div>
   )
 }

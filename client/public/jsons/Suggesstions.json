@@ -1,38 +1,46 @@
 [
     {
+        "id":"26af91acd0badace8f3c876112e2af84296434bd3d4caf634d301a49de9e4a9f",
         "author":{
-            "name":"Author Name",
+            "name":"foo",
             "image":"assets/random_pfp/pfp1.jpg"
         },
         "postImage":"https://source.unsplash.com/category/insta",
-        "timestamp":"2021-01-01T00:00:00.000Z",
-        "likes":100
+        "timestamp":"a year ago",
+        "likes":100,
+        "comment":"LOL..."
     },
     {
+        "id":"52ddbdf98cec67725a2f76c32defa7481974072b285833de5ec491c5f8ba7506",
         "author":{
-            "name":"Author Name",
+            "name":"bar",
             "image":"assets/random_pfp/pfp2.jpg"
         },
         "postImage":"https://source.unsplash.com/category/insta",
-        "timestamp":"2021-01-01T00:00:00.000Z",
-        "likes":100
+        "timestamp":"a year ago",
+        "likes":100,
+        "comment":"LOL..."
     },
     {
+        "id":"f51abbbb3dd641f9492067dddfd88e70782c6c5e2f76dbabb043fa8b63d3493b",
         "author":{
-            "name":"Author Name",
+            "name":"haha",
             "image":"assets/random_pfp/pfp3.jpg"
         },
         "postImage":"https://source.unsplash.com/category/insta",
-        "timestamp":"2021-01-01T00:00:00.000Z",
-        "likes":100
+        "timestamp":"a year ago",
+        "likes":100,
+        "comment":"LOL..."
     },
     {
+        "id":"26af91acd0badace8f3c876112e2af84296434bd3d4caf634d301a49de9e4a9f",
         "author":{
-            "name":"Author Name",
+            "name":"ho",
             "image":"assets/random_pfp/pfp4.jpg"
         },
         "postImage":"https://source.unsplash.com/category/insta",
-        "timestamp":"2021-01-01T00:00:00.000Z",
-        "likes":100
+        "timestamp":"a year ago",
+        "likes":100,
+        "comment":"LOL..."
     }
 ]
