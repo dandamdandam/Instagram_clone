@@ -1,0 +1,32 @@
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+# Logs
+log/
+*.log
+
+# Compiled bytecode
+bin/
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Dependency directories
+/.mvn/
+/repository/
+
+# Miscellaneous
+*.swp
+*.bak
+*.tmp
+.DS_Store
