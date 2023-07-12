@@ -1,6 +1,6 @@
 import Story from './components/story_component';
 import get_random_profiles from './javascripts/get_random_profiles';
-import {useState, useRef} from 'react';
+import {useState, useRef, useEffect} from 'react';
 import './style.scss';
 import PostArr from './sugesstions/Suggesstions';
 import './App.css';
@@ -11,8 +11,30 @@ function App() {
       <StoryArr/>
       <PostArr />
       <Navbar />
+      <Test />{/* 테스트용 */}
     </div>
   );
+}
+
+function Test(){
+  const [post, setPost] = useState([])
+
+  useEffect(() => {
+    fetch("http://localhost:8080/api/get-posts")
+    .then(res => res.json())
+    .then(data => setPost(data));
+  }, []);
+
+  return (
+    <div>
+      {post.map((item) => (
+        <div key={item.id}>
+          <h3>{item.author.name}</h3>
+          <img src={item.postImage}/>
+        </div>
+      ))}
+    </div>
+  )
 }
 
 function Header(){
