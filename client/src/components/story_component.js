@@ -11,7 +11,7 @@ function Story({img_path, id, is_new}) {
     return (
         <div className="story">
             <div className="ring" style={ is_new ? colored_ring : noncolored_ring}>
-                <img src={img_path}/>
+                <img src={img_path} alt="스토리"/>
             </div>
             <span className="id">{id}</span>
         </div>
