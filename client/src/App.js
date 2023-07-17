@@ -3,7 +3,6 @@ import get_random_profiles from './javascripts/get_random_profiles';
 import {useState, useRef} from 'react';
 import './style.scss';
 import PostArr from './sugesstions/Suggesstions';
-import './App.css';
 function App() {
   return (
     <div className="App">
@@ -18,10 +17,10 @@ function App() {
 function Header(){
   return(
     <div className="header">
-      <img src="assets/images/logo.jpg"/>
+      <img src="assets/images/logo.jpg" alt="로고"/>
       <div>
-        <img src="assets/images/like_off_icon.jpg"/>
-        <img src="assets/images/direct_msg_icon.jpg"/>
+        <img src="assets/images/like_off_icon.jpg" alt="알림"/>
+        <img src="assets/images/direct_msg_icon.jpg" alt="Direct Message"/>
       </div>
     </div> 
   )
@@ -38,7 +37,7 @@ function StoryArr() {
   var [con_tran, con_move]=useState(0);
   var story_con_ref=useRef();
   function move_left(){
-    if(con_tran!=0)
+    if(con_tran!==0)
       con_move(con_tran+document.body.clientWidth);
   };
   function move_right(){
@@ -61,8 +60,8 @@ function StoryArr() {
         }
       </div>
       <div className="story_arrow">
-        <img src="assets/images/ei_arrow-left.png" onClick={move_left}/>
-        <img src="assets/images/ei_arrow-right.png" onClick={move_right}/>
+        <img src="assets/images/ei_arrow-left.png" alt="스토리 왼쪽으로 넘기기" onClick={move_left}/>
+        <img src="assets/images/ei_arrow-right.png" alt="스토리 오른쪽으로 넘기기" onClick={move_right}/>
       </div>
     </div>
   );
@@ -77,11 +76,11 @@ function Navbar() {
 
   return(
     <div className="nav_bar">
-      <img src="assets/images/bottom_nav_home_off_icon.jpg"/>
-      <img src="assets/images/bottom_nav_search_off_icon.jpg"/>
-      <img src="assets/images/bottom_nav_upload_icon.jpg"/>
-      <img src="assets/images/bottom_nav_reels_off_icon.jpg"/>
-      <img src="assets/images/default_image.jpg" style={tmp}/>
+      <img src="assets/images/bottom_nav_home_off_icon.jpg" alt="홈 버튼"/>
+      <img src="assets/images/bottom_nav_search_off_icon.jpg" alt="검색"/>
+      <img src="assets/images/bottom_nav_upload_icon.jpg" alt="업로드"/>
+      <img src="assets/images/bottom_nav_reels_off_icon.jpg" alt="릴스"/>
+      <img src="assets/images/default_image.jpg" style={tmp} alt="내 프로필"/>
     </div>
   );
 }
